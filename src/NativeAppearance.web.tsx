@@ -48,5 +48,5 @@ export function NativeAppearanceProvider(props: any) {
     }
   }, []);
 
-  return <View style={{ flex: 1 }} {...props} />
+  return React.cloneElement(props.children, props);
 };
